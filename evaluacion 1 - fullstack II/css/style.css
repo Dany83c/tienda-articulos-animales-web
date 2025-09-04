@@ -3,3 +3,10 @@ a:hover{
     font-size: larger;
     font-family: sans-serif;
 }
+nav{
+    background-color: #f5bb74;
+}
+.bordes{
+    padding: 5px;
+    margin: 10px;
+}
