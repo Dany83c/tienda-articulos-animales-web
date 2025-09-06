@@ -10,3 +10,11 @@ nav{
     padding: 5px;
     margin: 10px;
 }
+.carrusel-img {
+  height: 300px; 
+  object-fit: contain; 
+}
+footer{
+    background-color: #f5bb74;
+}
+
