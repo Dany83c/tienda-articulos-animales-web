@@ -1,6 +1,5 @@
 a:hover{
     font-weight: bold;
-    font-size: larger;
     font-family: sans-serif;
 }
 nav{
@@ -17,4 +16,9 @@ nav{
 footer{
     background-color: #f5bb74;
 }
+a>i{
+    font-size: 35px; 
+    color: cornflowerblue;
+}
+
 
