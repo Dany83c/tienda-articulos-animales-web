@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Viva pets</title>
+    <!-- bootstrap 5  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- estilo propio -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="pagina-inicio.html">
+        <img src="https://img.freepik.com/premium-vector/cute-petshop-logo-with-cat-dog_454510-56.jpg" alt="" width="50" height="60" class="d-inline-block align-text-top">
+        Viva Pets
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="pagina-inicio.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <!--TODO-->
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactar.html">Contacto</a>
+          </li>
+        </ul>
+        <!--EL CARRITO-->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link position-relative" href="#" id="cartDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-cart3" ></i>
+              <span class="position-relative badge" id="carritoCounter" style="background-color: cornflowerblue;">
+                0
+                <span class="visually-hidden">productos en el carrito</span>
+              </span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="cartDropdown" style="min-width: 300px;">
+            <li><strong>Tu carrito</strong></li>
+            <li class="dropdown-divider"></li>
+            <!-- TODO: Arreglar esto cuando haga en jaVaScript-->
+            <li>Producto 1 - $detayes</li>
+            <li>Producto 2 - $, presio </li>
+            <li> <i class="bi bi-basket2-fill "></i> Producto 3 - $y descunto </li>
+            <li class="dropdown-divider"></li>
+            <li>El total: <span id="totalCarrito"> detayes, presio y descunto</span> </li>
+            <li><a href="carrito.html" class="btn btn-primary">Ir al carrito</a> </li>
+
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- todas las paginas tienen que tener este navBar-->
+<!-- aqui termina el navBar arreglar el carrito-->
+
+
+    
+    <h1 class="text-center"> Noticias y blogs</h1>
+    <div class="container">
+        <div class="row bordes">
+            
+            <div class="col-xs-4 col-md-4 col-lg-4 col-xxl-4">
+                <h3>Blog 1 </h3>
+                <img class="img-fluid" src="https://www.bonza.dog/wp-content/uploads/Border-Collie-Health-Problems-Comprehensive-Guide.webp"  alt="perro-blog">
+            </div>
+            <div class="col-xs-8 col-md-8 col-lg-8 col-xxl-8">
+                <p class="text-break">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem officia fuga, impedit quasi eveniet, necessitatibus culpa soluta officiis error maxime provident laboriosam laudantium magnam qui corrupti! Natus provident veritatis dolor?
+                    Voluptate unde sapiente molestias in voluptatem veniam dolorum, repellendus ipsam quo quae animi praesentium aliquid error accusantium maxime aut vitae cum necessitatibus.
+
+                </p>
+                <a href="#" class="btn btn-primary">Saber más</a>
+                <br>
+            </div> 
+        </div>
+        <div class="row bordes">
+            
+            <div class="col-xs-4 col-md-4 col-lg-4 col-xxl-4">
+                <h3>Blog 2 </h3>
+                <img class="img-fluid" src="https://purina.cl/sites/default/files/2022-11/purina-brand-cuanto-vive-un-gato-nota_03.jpg"  alt="gato-blog">
+            </div>
+            <div class="col-xs-8 col-md-8 col-lg-8 col-xxl-8">
+                <p class="text-break">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem officia fuga, impedit quasi eveniet, necessitatibus culpa soluta officiis error maxime provident laboriosam laudantium magnam qui corrupti! Natus provident veritatis dolor?
+                    Voluptatem, repudiandae odit dicta mollitia similique necessitatibus laboriosam praesentium odio obcaecati perspiciatis tempore atque nobis nam. Esse facilis odio doloribus fuga deleniti.
+                   
+
+                </p>
+                <a href="#" class="btn btn-primary">Saber más</a>
+                <br>
+            </div> 
+        </div>
+        <div class="row bordes">
+            
+            <div class="col-xs-4 col-md-4 col-lg-4 col-xxl-4">
+                <h3>Blog 3 </h3>
+                <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Atelerix_albiventris_in_Spain.jpg/1024px-Atelerix_albiventris_in_Spain.jpg"  alt="erizo-blog">
+            </div>
+            <div class="col-xs-8 col-md-8 col-lg-8 col-xxl-8">
+                <p class="text-break">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem officia fuga, impedit quasi eveniet, necessitatibus culpa soluta officiis error maxime provident laboriosam laudantium magnam qui corrupti! Natus provident veritatis dolor?
+                    Voluptatem, repudiandae odit dicta mollitia similique necessitatibus laboriosam praesentium odio obcaecati perspiciatis tempore atque nobis nam. Esse facilis odio doloribus fuga deleniti.
+                   
+
+                </p>
+                <a href="#" class="btn btn-primary">Saber más</a>
+                <br>
+            </div> 
+        </div>
+    </div>
+
+<!--Footer-->
+<footer>
+  <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row text-center text-md-start">
+      <p class="mb-2 mb-md-0">&copy; 2025 Viva Pets. Todos los derechos reservados.</p>
+      <div class="d-flex gap-3">
+        <div class="p-2 bd-highlight"><a href="">Política de privacidad</a></div>
+        <div class="p-2 bd-highlight">|</div>
+        <div class="p-2 bd-highlight"><a href="">Términos y condiciones</a></div>
+      </div>
+      
+     
+    <form class="d-flex flex-column">
+      <p class="mb-2">Suscribase para recibir las ultimas ofertas</p>
+      <div class="d-flex">
+        <input id="emailFooterOferta" class="form-control me-2" type="email" placeholder="email" aria-label="email">
+        <button class="btn btn-outline-success" type="submit">suscribir</button>
+      </div>
+    </form>
+    
+  </div>
+  <br>
+</footer>
+    
+    <!-- java script de bootstrap y propio-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../JavaScript/java.js"></script>   
+</body>
+</html>

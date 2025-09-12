@@ -1,0 +1,41 @@
+a:hover{
+    font-weight:bolder ;
+    font-family: sans-serif;
+}
+nav{
+    background-color: #f5bb74;
+}
+.bordes{
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 10px;
+    background-color: #aee6b7;
+    margin: 5px 5px 5px 5px ;
+
+}
+.carrusel-img {
+  height: 300px; 
+  object-fit: contain; 
+}
+footer{
+    background-color: #f5bb74;
+}
+
+a>i{
+    font-size: 30px; 
+    color: cornflowerblue;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+.blog-img{
+
+  display: flex;
+}
