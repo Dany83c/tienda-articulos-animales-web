@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap 5  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!--Iconos de bootstrap-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+     <!-- estilo propio -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+  <nav class="navbar navbar-expand-lg navbar-light" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="pagina-inicio.html">
+        <img src="https://img.freepik.com/premium-vector/cute-petshop-logo-with-cat-dog_454510-56.jpg" alt="" width="50" height="60" class="d-inline-block align-text-top">
+        Viva Pets
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="pagina-inicio.html">Home</a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactar.html">Contacto</a>
+          </li>
+        </ul>
+        <!--EL CARRITO-->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link position-relative" href="#" id="cartDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-cart3" ></i>
+              <span class="position-relative badge" id="carritoCounter" style="background-color: cornflowerblue;">
+                0
+                <span class="visually-hidden">productos en el carrito</span>
+              </span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="cartDropdown" style="min-width: 300px;">
+            <li><strong>Tu carrito</strong></li>
+            <li class="dropdown-divider"></li>
+            <div id="lista-productos-dropdown">
+
+            </div>
+            <li class="dropdown-divider"></li>
+            <li>El total: <span id="total-carrito-dropdown">$0</span> </li>
+            <li><a href="carrito.html" class="btn btn-primary">Ir al carrito</a> </li>
+
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- todas las paginas tienen que tener este navBar-->
+<!-- aqui termina el navBar arreglar el carrito-->
+ <main>
+    
+    <div class="container">
+      <div class="row align-items-center" >
+        <div class="col-xs-8 col-md-8 col-lg-8 col-xxl-8">
+            <h1>
+            Blog 1 - Perros 
+            </h1>
+            <img class="img-fluid" src="https://www.bonza.dog/wp-content/uploads/Border-Collie-Health-Problems-Comprehensive-Guide.webp"  alt="perro-blog">
+            <p class="text-break">
+                El perro (Canis familiaris o Canis lupus familiaris, dependiendo de si se lo considera una especie o una subespecie del lobo), llamado perro doméstico o can, y en algunos lugares coloquialmente llamado chucho, tuso, choco, entre otros; es un mamífero carnívoro de la familia de los cánidos, que constituye una especie del género Canis. En el 2013, la población mundial estimada de perros estaba entre setecientos millones y novecientos ochenta y siete millones.
+            </p>
+            <p class="text-break">
+                Su tamaño (o talla), su forma y su pelaje es muy diverso y varía según la raza. Posee un oído y un olfato muy desarrollados, y este último es su principal órgano sensorial. Su longevidad media es de diez a trece años, dependiendo de la raza. Junto al gato doméstico, es uno de los animales de compañía más populares del mundo, recibiendo el título de «el mejor amigo del hombre».
+            </p>
+            <p class="text-break">
+            Tienen una gran relación con los humanos, y entre tales relaciones se incluyen servir como animales de compañía, perros de asistencia, perros guardianes, perros de trabajo, perros de caza, galgos de carrera, perros guía, perros pastores, perros boyeros, perros de guerra, perros policía, etc 
+            </p>
+            <p class="text-break">
+                En comparación con lobos de tamaño equivalente, los perros tienden a tener el cráneo un 20 % más pequeño y el cerebro un 10 % más pequeño, además de tener los dientes más pequeños que otras especies de cánidos. El perro requiere menos calorías para vivir que el lobo. Su dieta de sobras de los humanos hizo que su cerebro grande y los músculos mandibulares utilizados en la caza dejaran de ser necesarios. Algunos expertos piensan que las orejas flácidas de los canes son el resultado de la atrofia de los músculos mandibulares.
+            </p>
+            <p>
+            <span style="color: red;">todo sacado de wikipedia</span>
+            </p>
+        </div>
+      </div>
+        
+    </div>
+ </main>
+    
+    
+
+    <!--Footer-->
+<footer>
+  <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row text-center text-md-start">
+      <p class="mb-2 mb-md-0">&copy; 2025 Viva Pets. Todos los derechos reservados.</p>
+      <div class="d-flex gap-3">
+        <div class="p-2 bd-highlight"><a href="#">Política de privacidad</a></div>
+        <div class="p-2 bd-highlight">|</div>
+        <div class="p-2 bd-highlight"><a href="#">Términos y condiciones</a></div>
+      </div>
+      
+     
+    <form class="d-flex flex-column">
+      <p class="mb-2">Suscribase para recibir las ultimas ofertas</p>
+      <div class="d-flex">
+        <input id="emailFooterOferta" class="form-control me-2" type="email" placeholder="email" aria-label="email">
+        <button class="btn btn-outline-success" type="submit">suscribir</button>
+      </div>
+    </form>
+    
+  </div>
+  <br>
+</footer>
+    
+    <!-- java scripts de bootstrap y propio-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

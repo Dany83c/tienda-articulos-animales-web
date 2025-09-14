@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Producto - Viva Pets</title>
+    <!-- bootstrap 5  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!--Iconos de bootstrap-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+     <!-- estilo propio -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+  <nav class="navbar navbar-expand-lg navbar-light" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="pagina-inicio.html">
+        <img src="https://img.freepik.com/premium-vector/cute-petshop-logo-with-cat-dog_454510-56.jpg" alt="" width="50" height="60" class="d-inline-block align-text-top">
+        Viva Pets
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="pagina-inicio.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <!--TODO-->
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactar.html">Contacto</a>
+          </li>
+        </ul>
+        <!--EL CARRITO-->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link position-relative" href="#" id="cartDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-cart3" ></i>
+              <span class="position-relative badge" id="carritoCounter" style="background-color: cornflowerblue;">
+                0
+                <span class="visually-hidden">productos en el carrito</span>
+              </span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="cartDropdown" style="min-width: 300px;">
+            <li><strong>Tu carrito</strong></li>
+            <li class="dropdown-divider"></li>
+            <div id="lista-productos-dropdown">
+
+            </div>
+            <li class="dropdown-divider"></li>
+            <li>El total: <span id="total-carrito-dropdown">$0</span> </li>
+            <li><a href="carrito.html" class="btn btn-primary">Ir al carrito</a> </li>
+
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- todas las paginas tienen que tener este navBar-->
+<!-- aqui termina el navBar arreglar el carrito-->
+ <main> 
+    <!-- productos--> 
+    <script src="../JavaScript/productos.js"></script>
+    <div class="container mt-4" id="detalle-producto">
+
+    </div>
+
+  <script>
+    // Obtener ID de la URL
+    const params = new URLSearchParams(window.location.search)
+    const id = params.get("id")
+    const producto = productos.find(p => p.id == id)
+
+    const contenedor = document.getElementById("detalle-producto")
+    //plantilla 
+    if (producto) {
+      contenedor.innerHTML =
+        '<section class="py-5">' +
+          '<div class="container">' +
+            '<div class="row">' +
+              '<div class="col-md-6">' +
+                '<img src="' + producto.imagen + '" alt="' + producto.nombre + '" class="img-fluid rounded">' +
+              '</div>' +
+              '<div class="col-md-6">' +
+                '<h1 class="mb-3">' + producto.nombre + '</h1>' +
+                '<h3 class="text-primary mb-3">$' + producto.precio + '</h3>' +
+                '<div class="mb-3">' +
+                  '<label for="cantidad" class="form-label">Cantidad:</label>' +
+                  '<input type="number" id="cantidad" class="form-control" value="1" min="1">' +
+                '</div>' +
+                '<button id="agregarCarrito" class="btn btn-success btn-lg w-100 btn-agregar-carrito" data-id='+id+'>Agregar al Carrito</button>' +
+                '<div class="mt-4">' +
+                  '<h5>Detalles del producto</h5>' +
+                  '<p class="mb-4">' + producto.descripcion+ '</p>'
+                '</div> </div> </div> </div> </section>';
+    } else {
+      contenedor.innerHTML = "<p class='text-danger text-center mt-4'>Producto no encontrado.</p>"
+    }
+    // Añadir listeners a los botones de "Agregar al carrito"
+        const btnAgregar = document.querySelectorAll(".btn-agregar-carrito");
+        btnAgregar.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const productId = btn.dataset.id;
+                agregarAlCarrito(productId);
+            });
+        });
+    </script>
+
+ </main>
+
+
+<footer>
+  <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row text-center text-md-start">
+      <p class="mb-2 mb-md-0">&copy; 2025 Viva Pets. Todos los derechos reservados.</p>
+      <div class="d-flex gap-3">
+        <div class="p-2 bd-highlight"><a href="">Política de privacidad</a></div>
+        <div class="p-2 bd-highlight">|</div>
+        <div class="p-2 bd-highlight"><a href="">Términos y condiciones</a></div>
+      </div>
+      
+     
+    <form class="d-flex flex-column">
+      <p class="mb-2">Suscribase para recibir las ultimas ofertas</p>
+      <div class="d-flex">
+        <input id="emailFooterOferta" class="form-control me-2" type="email" placeholder="email" aria-label="email">
+        <button class="btn btn-outline-success" type="submit">suscribir</button>
+      </div>
+    </form>
+    
+  </div>
+  <br>
+</footer>
+
+       <!-- java script de bootstrap y propio-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../JavaScript/carrito.js"></script>
+</body>
+</html>

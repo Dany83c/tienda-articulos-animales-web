@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nombre": "Galleta perro",
+    "descripcion": "Galletas caseras para perro hechas con ingredientes de grado humano",
+    "precio": 2990,
+    "imagen": "https://dojiw2m9tvv09.cloudfront.net/42482/product/X_galletajpg1468.jpg?129&time=1757135042"
+  },
+  {
+    "id": 2,
+    "nombre": "Collar perro",
+    "descripcion": "Collar tactico para perro mediano y grande",
+    "precio": 4600,
+    "imagen": "https://i5.walmartimages.cl/asr/8282f4e5-1417-4e34-b973-a3b24db75979.fa98e0af34ca671459d93bea6041c350.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+  },
+  {
+    "id": 3,
+    "nombre": "Pala para arenero",
+    "descripcion": "Marca generica, ideal para areneros de gato",
+    "precio": 1990,
+    "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2021/05/pala-azul-1.png.webp"
+  },
+  {
+    "id": 4,
+    "nombre": "Churu gato sabor atún",
+    "descripcion": "sachet de 4 tubos sabor atún",
+    "precio": 2300,
+    "imagen": "https://www.tusmascotas.cl/wp-content/uploads/2021/05/pala-azul-1.png.webp"
+  }
+]
