@@ -81,7 +81,8 @@ const productos = [
         "id": 12,
         "nombre": "Alimento perro Nomade Raza Med/gde 20kg",
         "descripcion": "Alimento Premium rico en proteína animal de alto valor biológico",
-        "precio": 2200,
+        "precio": 33800,
         "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_645952-MLU72604611387_102023-F.webp"
     }
+
                 ]
