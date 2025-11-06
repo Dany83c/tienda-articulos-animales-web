@@ -14,4 +14,4 @@ npm run
 
 si ese no funciona entonces
 
-nom run dev
+npm run dev
